@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+
+.header-container {
+    padding: 15px 30px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    background: #fff;
+    width: 100%;
+    border-radius: 30px;
+    height: 719px;
+}
+
+.header-content_area {
+    margin: 0 0 0 170px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans';
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.link-item {
+    display: flex;
+}
+
+.header-hr {
+    position: relative;
+    top: 25px;
+    opacity: 0.3;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0px 0px 0 60px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #5d5c70;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+
+ul li a:hover {
+    color: #0f73de;
+}
+
+ul li a:hover::before {
+    content: '';
+    color: #0f73de;
+    transform: scaleX(1);
+    transition: transform 0.25s;
+    transform-origin: left;
+}
+
+ul li a::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #0f73de;
+    position: absolute;
+    bottom: -5px;
+    left: 0px; 
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transofrm 0.25s;
+}
+
+.header-logo {
+    width: 140px;
+    height: 140px;
+}
+
+.justice-court {
+    width: 607px;
+    height: 719px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+h5 {
+    font-size: 19px;
+
+    color: #5d5c70;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 56px;
+    font-weight: 600;
+    color: #242343;
+}
+
+h3 {
+    margin-top: 30px;
+    font-size: 23px;
+    color: #5d5c70;
+    font-weight: 400;
+}
+
+.header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 70px;
+    min-width: 400px;
+    background: #0f73de;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.header-button::after {
+    content: '';
+    background: url(../img/btn-icon.svg);
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    margin: 0 20px;
+   background-repeat: no-repeat;
+   transition: .3s;
+   will-change: transform;
+}
+
+.header-button:hover::after {
+    height: 35px;
+    width: 35px;
+    transform: scale(1.1);
+}
+
+
+/* main */
+
+.founder-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Noto Sans';
+}
+
+.founder-item img {
+    border-radius: 30px;
+}
+
+.founder-item {
+    margin: 0 50px;
+}
+
+.second-founder-item {
+    margin-top: 100px;
+}
+
+.first-founder {
+    font-size: 45px;
+    color: #242343;
+    font-weight: 600;
+}
+
+.first-founder-name {
+    margin-top: 30px;
+    color: #242343;
+    font-size: 27px;
+}
+
+
+.about-founder {
+    margin-top: 30px;
+    color: #5d5c70;
+    line-height: 23px;
+    font-size: 16px;
+}
+
+.about-founder-second {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #5d5c70;
+    line-height: 23px;
+}
+
+
+.about-us-container {
+max-width: 1220px;
+margin: 150px auto;
+font-family: 'Noto Sans';
+}
+
+.about-us-container h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #242343;
+}
+
+.about-us-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-us-block {
+    width: 390px;
+    padding: 0 30px;
+    height: 202px;
+    background: #fff;
+    border-radius: 30px;
+}
+
+.about-us-block p {
+    margin-top: 20px;
+    font-size: 21px;
+    color: #5d5c70;
+}
+
+.about-block-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-block-row img {
+    width: 80px;
+    height: 80px;
+}
+
+.col {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 50px;
+    color: #007aff;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin: 30px 0 0 0;
+  }
+
+  .col img {
+    width: 10px;
+    height: 10px;
+  }
+
+  hr { 
+    opacity: 0.3;
+  }
+
+  .when-contact-wrapper {
+    background: #fff;
+    border-radius: 30px;
+    width: 100%;
+  }
+  
+  .when-contact-container {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+
+@media screen and (max-width:480px) {
+    
+/* Гамбургер иконка */
+.burger-menu {
+	width: 30px;
+	height: 30px;
+	position: relative;
+    top: -5px;
+	z-index:6;
+	overflow: hidden;
+}
+
+.burger-menu span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #000;
+	transition: all 0.5s;
+}
+
+.burger-menu span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.burger-menu span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.burger-menu.active span:nth-of-type(1) {
+  display: none;
+}
+.burger-menu.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.burger-menu.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+/* Меню, которое будет появляться */
+.drop-menu {
+	position: fixed;
+    z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+    background: #fff;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+    overflow-x: hidden;
+}
+
+.drop-menu.active {
+	transform: translateX(0);
+}
+
+.drop-menu ul {
+    display: block;
+}
+
+.drop-menu li {
+	list-style-type: none;
+    padding: 0px 0px 20px;
+    margin: 20px 10px;
+    border-bottom: 1px solid #e9204f;
+}
+
+.drop-menu a {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+}
