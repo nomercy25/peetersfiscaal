@@ -1147,7 +1147,11 @@ div[data-customstyle="yes"] {
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 
   .founder-block {
@@ -1157,8 +1161,16 @@ div[data-customstyle="yes"] {
   .founder-item img {
     width: 100%;
   }
+
+  .first-founder {
+    font-size: 23px;
+  }
   .about-us-container {
     width: 100%;
+  }
+
+  .about-us-container h2 {
+    text-align: center;
   }
 
   .about-us-row {
@@ -1168,24 +1180,83 @@ div[data-customstyle="yes"] {
     margin: 20px 0;
   }
 
-  .reviews .videos {
+  .oficial {
     flex-direction: column;
   }
 
-  .oficial {
-    flex-direction: column;
+  .oficial p {
   }
 
   .oficial img.document {
     width: 100%;
   }
 
+  .when-contact-wrapper h2 {
+    font-size: 23px;
+  }
+
+  .when-contact-container {
+    padding: 0 15px;
+  }
+
+  .when-contact-item .content .description {
+    width: 100%;
+  }
+
+  .when-contact-item .content .title {
+    font-size: 22px;
+  }
+
+  .when-contact-item .content p {
+    color: #5d5c70;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.45;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .when-contact-items {
+    grid-template-columns: 1fr;
+  }
+
   .when-contact-item {
     grid-template-columns: 1fr;
   }
 
+  .reviews h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .advantages {
+    padding: 0 15px;
+  }
+
+  .advantages .advantage-item .title {
+    font-size: 22px;
+  }
+
+  .reviews .videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .how-we-work {
     grid-template-columns: 1fr;
+  }
+
+  .how-we-work-item .title {
+    font-size: 22px;
+  }
+
+  .how-we-work .col {
+    padding: 0 15px;
+  }
+
+  .col h2 {
+    text-align: center;
+    font-size: 22px;
   }
   .advantages .advantage-items.row-1 {
     grid-template-columns: 1fr;
@@ -1198,11 +1269,39 @@ div[data-customstyle="yes"] {
     flex-direction: column;
   }
 
+  .application .application-wrapper h2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .footer-item span {
+    font-size: 8px;
+  }
+
+  .first-footer p {
+    font-size: 8px;
+  }
+
+  .second-footer a {
+    font-size: 14px;
+  }
+
+  .third-footer {
+    font-size: 14px;
+  }
+
+  .first-footer::before,
+  .second-footer::before,
+  .third-footer::before {
+    width: 50px;
+    height: 50px;
+  }
+
   .footer-row {
     flex-direction: column;
   }
 
   .oficial .title {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
