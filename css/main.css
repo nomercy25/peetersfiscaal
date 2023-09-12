@@ -23,7 +23,7 @@ body {
   background: #fff;
   width: 100%;
   border-radius: 30px;
-  height: 719px;
+  height: 631px;
 }
 
 .header-content_area {
@@ -92,22 +92,19 @@ ul li a::before {
 }
 
 .justice-court {
-  width: 607px;
-  height: 719px;
+  width: 530px;
+  height: 631px;
   object-fit: cover;
   border-radius: 30px;
 }
 
 h5 {
   font-size: 19px;
-
   color: #5d5c70;
   font-weight: 400;
-  margin-top: 30px;
 }
 
 h1 {
-  margin-top: 30px;
   font-size: 56px;
   font-weight: 600;
   color: #242343;
@@ -1013,13 +1010,43 @@ div[data-customstyle="yes"] {
   margin-top: 20px;
 }
 
+/* Large desktops and laptops */
+@media screen and (min-width: 1200px) {
+  .header-content_area {
+    margin: 0 0;
+  }
+
+  .header-button {
+    max-width: 400px;
+  }
+
+  .justice-court img {
+    object-fit: cover;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+}
+
+/* Landscape phones and smaller */
+
 @media screen and (max-width: 480px) {
   /* Гамбургер иконка */
   .burger-menu {
     width: 30px;
     height: 30px;
-    position: relative;
-    top: -5px;
+    position: fixed;
+    top: 20px;
+    right: 15px;
     z-index: 6;
     overflow: hidden;
   }
@@ -1082,11 +1109,100 @@ div[data-customstyle="yes"] {
     list-style-type: none;
     padding: 0px 0px 20px;
     margin: 20px 10px;
-    border-bottom: 1px solid #e9204f;
   }
 
   .drop-menu a {
-    font-size: 20px;
+    font-size: 11px;
     text-transform: uppercase;
+  }
+
+  h5 {
+    display: none;
+  }
+
+  .header-button {
+    min-width: 100%;
+  }
+
+  hr {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .header-content_area {
+    margin: 0 0 0 0;
+  }
+
+  .justice-court {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .founder-block {
+    flex-direction: column;
+    width: 100%;
+  }
+  .founder-item img {
+    width: 100%;
+  }
+  .about-us-container {
+    width: 100%;
+  }
+
+  .about-us-row {
+    flex-direction: column;
+  }
+  .about-us-block {
+    margin: 20px 0;
+  }
+
+  .reviews .videos {
+    flex-direction: column;
+  }
+
+  .oficial {
+    flex-direction: column;
+  }
+
+  .oficial img.document {
+    width: 100%;
+  }
+
+  .when-contact-item {
+    grid-template-columns: 1fr;
+  }
+
+  .how-we-work {
+    grid-template-columns: 1fr;
+  }
+  .advantages .advantage-items.row-1 {
+    grid-template-columns: 1fr;
+  }
+  .advantages .advantage-items.row-2 {
+    grid-template-columns: 1fr;
+  }
+  .application .application-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .oficial .title {
+    font-size: 30px;
   }
 }
